@@ -1,0 +1,11 @@
+#<IfModule mod_rewrite.c>
+#    RewriteEngine on
+#    RewriteRule ^(.+)?$ /web/$1
+#</IfModule>
+
+#Divionity
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^$ web/ [L]
+    RewriteRule (.*) web/$1 [L]
+</IfModule>
