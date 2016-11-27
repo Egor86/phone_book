@@ -18,7 +18,7 @@ class UserController extends Controller
     public function behaviors() {
         $behaviors = parent::behaviors();
         $behaviors['contentNegotiator']['formats'] =
-            ['application/htm;' => Response::FORMAT_HTML];
+            ['application/html' => Response::FORMAT_HTML];
 
         return $behaviors;
     }
